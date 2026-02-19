@@ -50,17 +50,15 @@ class PharmaGuardResponse(BaseModel):
     quality_metrics: dict
 
 @app.post("/process_vcf/")
-async def process_vcf_api(file: UploadFile = File(...), drug: str = ""):
-    # Save the uploaded file temporarily
-    file_path = f"temp_{file.filename}"
-    with open(file_path, "wb") as buffer:
-        buffer.write(await file.read())
+async def process(file: UploadFile = File(...), drug: str = "CODEINE"):
 
-    # Call the logic from logic.py
-    response = process_vcf(file_path, drug)
+    contents = await file.read()
 
-    # Delete the temporary file after processing
-    os.remove(file_path)
+    temp_path = "/tmp/temp.vcf"
 
-    # Return the response as JSON
-    return response
+    with open(temp_path, "wb") as f:
+        f.write(contents)
+
+    result = process_vcf(temp_path, drug)
+
+    return result
