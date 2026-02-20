@@ -6,7 +6,7 @@ export const analyzePGx = async (file, drug = "") => {
     formData.append("file", file);
 
     const response = await fetch(
-      `${process.env.REACT_APP_BACKEND_URI}/process_vcf/?drug=${encodeURIComponent(drug)}`,
+      `${import.meta.env.VITE_API_URL}/process_vcf/?drug=${encodeURIComponent(drug)}`,
       {
         method: "POST",
         body: formData,

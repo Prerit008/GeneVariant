@@ -76,7 +76,7 @@ function App() {
                 <i className="fas fa-dna text-white text-sm"></i>
               </div>
               <div>
-                <h1 className="text-xl font-semibold text-slate-900">GeneVariant PGx</h1>
+                <h1 className="text-xl font-semibold text-slate-900">PharmaGuard PGx</h1>
                 <p className="text-xs text-slate-500">Pharmacogenomic Analysis Platform</p>
               </div>
             </div>
@@ -288,7 +288,7 @@ function App() {
                     <i className="fas fa-dna text-4xl text-slate-400"></i>
                   </div>
                   <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                    Welcome to GeneVariant PGx
+                    Welcome to PharmaGuard PGx
                   </h3>
                   <p className="text-slate-500 max-w-md mb-8">
                     Upload a VCF file and select drugs of interest to begin pharmacogenomic analysis. 

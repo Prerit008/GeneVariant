@@ -1,5 +1,5 @@
 // components/VCFUploader.jsx
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 
 const VCFUploader = ({ onFileSelected, selectedFile }) => {

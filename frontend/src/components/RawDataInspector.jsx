@@ -5,7 +5,6 @@ const RawDataInspector = ({ data }) => {
   const [copied, setCopied] = useState(false);
   const [expanded, setExpanded] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
-  const [highlightedLines, setHighlightedLines] = useState([]);
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(JSON.stringify(data, null, 2));
