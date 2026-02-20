@@ -1,8 +1,10 @@
-# 🧬 GeneVariant — AI Pharmacogenomic Risk Predictor
+# 🧬 PharmaGuard — AI Pharmacogenomic Risk Predictor
 
 > **Personalized medicine powered by genomics + AI**
 
-GeneVariant is an AI-powered clinical decision support system that analyzes **patient genetic variants (VCF files)** to predict **drug response risks**, generate **CPIC-aligned dosing recommendations**, and provide **LLM-generated clinical explanations**.
+Demo : [pharmaguard-rift-ten.vercel.app](https://pharmaguard-rift-ten.vercel.app/)
+
+PharmaGuard is an AI-powered clinical decision support system that analyzes **patient genetic variants (VCF files)** to predict **drug response risks**, generate **CPIC-aligned dosing recommendations**, and provide **LLM-generated clinical explanations**.
 
 Built for the **National Pharmacogenomics Hackathon**.
 
@@ -14,7 +16,7 @@ Adverse Drug Reactions (ADRs) cause over **100,000 deaths annually** worldwide.
 
 Many adverse outcomes occur because patients metabolize drugs differently due to **genetic variation**.
 
-GeneVariant solves this by transforming raw genomic data into **clinically actionable insights**.
+PharmaGuard solves this by transforming raw genomic data into **clinically actionable insights**.
 
 ---
 
@@ -105,7 +107,7 @@ Interactive Clinical Dashboard
 ## 📂 Project Structure
 
 ```
-GeneVariant/
+PharmaGuard/
 │
 ├── backend/
 │   └── app.py           # FastAPI application
@@ -276,8 +278,8 @@ file : .vcf file
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Prerit008/GeneVariant.git
-cd GeneVariant
+git clone https://github.com/Prerit008/PharmaGuard.git
+cd PharmaGuard
 ```
 
 ---
