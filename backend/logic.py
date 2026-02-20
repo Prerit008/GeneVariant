@@ -10,7 +10,6 @@ import json
 
 class RiskAssessment(BaseModel):
     risk_label: Literal["Safe", "Adjust Dosage", "Toxic", "Ineffective", "Unknown"]
-    confidence_score: float
     severity: Literal["none", "low", "moderate", "high", "critical"]
 
 
@@ -256,7 +255,6 @@ def process_vcf(vcf_file, drug):
 
         risk_assessment=RiskAssessment(
             risk_label=risk_label,
-            confidence_score=0.97,
             severity=severity
         ),
 
@@ -282,4 +280,5 @@ def process_vcf(vcf_file, drug):
             vcf_parsing_success=True
         )
     )
+
     return result
