@@ -79,7 +79,7 @@ Interactive Clinical Dashboard
 
 ### Frontend
 
-* React.js
+* Vite+React.js
 * Tailwind CSS
 * FontAwesome
 * Fetch API
@@ -97,7 +97,7 @@ Interactive Clinical Dashboard
 * Training & Prediction through Machine Learning
 ### Deployment
 
-* Frontend → **Personal**
+* Frontend → **Vercel**
 * Backend → **Vercel Serverless Functions**
 
 ---
@@ -316,9 +316,9 @@ npm start
 * Serverless FastAPI deployment
 * Temporary `/tmp` storage for uploaded VCF
 
-### Frontend (Personal)
+### Frontend (Vercel)
 
-* React production build
+* Vite+React production build
 * HTTPS enabled
 * PWA installable
 
